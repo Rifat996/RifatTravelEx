@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="theme-color" content="#1e89f4" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise Travel</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylemaps.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+  <link rel="icon" type="image/x-icon" href="imgs/favicon.ico.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+
+</head>
+
+    
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <img class="menubars" src="imgs/menu-bar.png" alt="">                    
+              </button>
+
+            <a href="#myPage">
+              <img class="logo-image" src="imgs/logo1.svg" alt="">
+            </a>
+
+              <a class="navbar-brand" href="#myPage">PARADISE TRAVEL</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#activities">ACTIVITIES</a></li>
+                <li><a href="#inspiration">INSPIRATION</a></li>
+                <li><a href="#pricing">BEST FOR YOUR BUDGET</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"> </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron text-center">
+          <h1 class="headline">Discover the hidden gem of Europe: <br> Bosnia</h1> 
+          <p class="headline1">Book now for an unforgettable adventure!</p> 
+          
+            <div class="row">
+              <div class="col text-center"><a href="#pricing">
+                <button id="tours-button" type="button" class="btn btn-danger">View available packages</button></a>
+              </div>
+              </div>
+            </div>
+        </div>
+        
+        
+        <!-- Container (Inspiration Section) -->
+        <div id="inspiration" class="container-fluid text-center">
+          <h2>INSPIRATION</h2>
+          <h4>Read handpicked articles to get you inspired by Bosnia</h4>
+          <br>
+          <div class="row slideanim">
+            <div class="col-sm-4">
+              <a data-toggle="modal" data-target="#article1">
+              <img class="img-responsive img-class" src="imgs/sutjeska-monument.jpg" alt=""></a>
+              <h4><strong>NATIONAL PARKS</strong> </h4>
+              <p>National parks are territories of immense value for the ecosystem. Consequently, people all over the world are striving to preserve them for posterity. Read about Bosnia's magnificent natural parks.</p>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#article1">View Article</button>
+            
+            </div>
+            <div class="col-sm-4">
+              <a data-toggle="modal" data-target="#article2">
+              <img class="img-responsive img-class" src="imgs/bosnian-coffee.jpg" alt="">
+            </a>
+              <h4><strong>THE CULTURE OF COFFEE</strong></h4>
+              <p>If you've never been to Bosnia and Herzegovina, you may not have sampled the Balkan country's distinctive coffee. But that's a shame because Bosnian coffee is strong, dark, and slightly sweet — the perfect afternoon pick-me-up or morning delight!</p>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#article2">View Article</button>
+            </div>
+            <div class="col-sm-4">
+              <a data-toggle="modal" data-target="#article3">
+              <img class="img-responsive img-class" src="imgs/lukomir-village.jpg" alt=""></a>
+              <h4><strong>VILLAGE OF LUKOMIR</strong></h4>
+              <p>Visiting Lukomir, the highest and most remote settlement in Bosnia and Herzegovina should be on your priority list when visiting this country. It is located at the edge of Rakitnica Canyon the second deepest canyon in Europe.</p>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#article3">View Article</button>
+            </div>
+          </div>
+          <br><br>
+          <div class="row slideanim">
+            <div class="col-sm-4">
+              <a data-toggle="modal" data-target="#article4">
+              <img class="img-responsive img-class" src="imgs/sarajevo-hagadah.jpg" alt=""></a>
+              <h4><strong>SARAJEVO HAGGADAH STORY</strong></h4>
+              <p>If we were to pick the brightest gems from the heritage kept in the National Museum of BiH, there is no way we could leave out the illuminated Jewish codex known around the world as the Sarajevo Haggadah.</p>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#article4">View Article</button>
+            </div>
+            <div class="col-sm-4">
+              <a data-toggle="modal" data-target="#article5">
+              <img class="img-responsive img-class" src="imgs/mostar.jpg" alt=""></a>
+              <h4><strong>MOSTAR OLD BRIDGE</strong></h4>
+              <p>The story goes that after a number of failed bridges, the Ottoman Sultan vowed to execute the engineer Mimar Hayruddin if his bridge collapsed too. The day the bridge's wooden supports were due to be removed in 1566, Hayruddin had already begun to dig his own grave when he found out the bridge had survived.</p>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#article5">View Article</button>
+            </div>
+            <div class="col-sm-4">
+              <a data-toggle="modal" data-target="#article6">
+              <img class="img-responsive img-class" src="imgs/kjbkmed.jpg" alt=""></a>
+              <h4 style="color:#303030;"><strong>GALLOPING WITH LIVNO MUSTANGS</strong></h4>
+              <p>Picture a vast and impressive mountainous plateau somewhere far away from civilization. Now, imagine that the silence is unexpectedly broken by horse neighing. Suddenly, hundreds of wild horses are free-roaming on the horizon and leave you in awe.</p>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#article6">View Article</button>
+            </div>
+          </div>
+        </div>
+        
+        <div id="article1" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="jumbotron1 text-center">
+                  <h1 class="headline">4 NATIONAL PARKS OF BOSNIA AND HERZEGOVINA</h1> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolores!</p>
+                </div>
+          
+                <div class="container-fluid article-style">
+                  <div class="row">
+                    <div class="col-12">
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=[URL to share]" target="_blank"><img class="fb-image" src="imgs/fb-icon.png" alt=""></a>
+          
+                      <a href="https://www.instagram.com/share?url=[URL to share]
+                      " target="_blank"><img class="inst-image" src="imgs/inst-icon.png" alt=""></a>
+          
+                      <a href="https://twitter.com/intent/tweet?url=[URL to share]&text=[Check out these Paradise Travel offers]&via=[via username]
+                      " target="_blank"><img class="twitter-image" src="imgs/twitter-icon.png" alt=""></a>  
+          
+                      <a href="https://api.whatsapp.com/send?text=[Check%20out%20this%20website] [URL to share]
+                      " target="_blank"><img class="whats-image" src="imgs/whats-icon.png" alt=""></a>
+          
+                      <h2>MESMERIZING NATURE</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12"><strong>National parks are territories meant to be conserved for posterity. In Bosnia and Herzegovina, there are four national parks.
+                    </strong></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <br><p>National parks are territories of immense value for the ecosystem. Consequently, people all over the world are striving to preserve them for posterity. National parks can be either natural, semi-natural, or developed land under the jurisdiction of an independent state.
+                      <br><br>
+                      An international organization, the International Union for Conservation of Nature (IUCN) has determined the criteria for declaring national parks which include size, the importance of the ecosystem, statutory legal protection, the prohibition of exploitation, and many other characteristics. Although the IUCN defined the term national park, there are many protected areas that are called national parks even when they don't fully correspond to the IUCN characteristics.
+                      <br><br>
+                      Some of the most famous national parks in the world are Yosemite National Park in the USA, Mount Kilimanjaro in Tanzania, Rocky Mountain National Park in Canada (the first national park in Canada was established in 1885), and many others. The world's largest national park, meeting the IUCN definition, is the Northeast Greenland National Park, which was established in 1974.</p></div>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-12 jumbotron2">     
+                      <p>In Bosnia and Herzegovina, there are four national parks. The Republican government declared two in the mid-twentieth century (Sutjeska and Kozara) but recently, The Bosnian government added two more (Una and Drina). Bosnia is a largely mountainous country with Dinaric Alps running through the middle separating two climate zones. Declaring some territories to be national parks in an effort to preserve them and maintain their uniqueness.
+                      </p>
+                    </div>
+                  </div>   
+                </div>
+          
+                <div class="container-fluid article-style">
+                  
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#Una">Una</a></li>
+                    <li><a data-toggle="tab" href="#Drina">Drina</a></li>
+                    <li><a data-toggle="tab" href="#Sutjeska">Sutjeska</a></li>
+                    <li><a data-toggle="tab" href="#Kozara">Kozara</a></li>
+                  </ul>
+                
+                  <div class="tab-content">
+                    <div id="Una" class="tab-pane fade in active">
+                      <h3>UNA NATIONAL PARK</h3>
+                      <p>Una National Park is the biggest National Park in Bosnia and Herzegovina, covering an area of 350km2. It is situated in the northwest part of the country, commonly known as the Krajina region. The majority of the park is located in the Bihac municipality.
+                        <br>
+                        <div id="myCarousel1" class="carousel slide carousel-around" data-ride="carousel">
+                          <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel1" data-slide-to="1"></li>
+                                <li data-target="#myCarousel1" data-slide-to="2"></li>
+                                <li data-target="#myCarousel1" data-slide-to="3"></li>
+                            </ol>
+                          
+                              <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                          
+                                <div class="item active">
+                                  <img class="carousel-image" src="imgs/una-national-park1.jpg" alt="Chania">
+                                  <div class="carousel-caption">
+                                  </div>
+                                </div>
+                          
+                                <div class="item">
+                                  <img class="carousel-image" src="imgs/una-national-park2.jpg" alt="Chania">
+                                  <div class="carousel-caption">
+                                  </div>
+                                </div>
+                              
+                                <div class="item">
+                                  <img class="carousel-image" src="imgs/una-national-park3.jpg" alt="Flower">
+                                  <div class="carousel-caption">
+                                  </div>
+                                </div>
+                          
+                                <div class="item">
+                                  <img class="carousel-image" src="imgs/una-national-park4.jpg" alt="Flower">
+                                  <div class="carousel-caption">
+                                  </div>
+                                </div>
+                            
+                              </div>
+                          
+                              <!-- Left and right controls -->
+                              <a class="left carousel-control" href="#myCarousel1" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                        <br>
+                        Una river runs through the Northwest of Bosnia and into the River Sava. The river is of exceptional value to the local people due to its natural resources, exceptional beauty, and cultural and historical heritage. For centuries the local population used the river and the surrounding area for fishing, hunting, foresting, and agriculture. In recent years, the government, as well as foreign visitors introduced some new activities such as tourism, recreation, education scientific research, etc.
+                        <br><br>
+                        There was a growing need to preserve these values so after a study conducted in 2005, the government decided to act upon it. The experts suggested the category for protection to be the Natural Park level. Therefore the state authorities finally implemented it in 2008. The park covers an area of 19.800 hectares. 13.500 hectares are in the regime of strict and aimed protection, while 6.300 hectares are under the development regime.</p>
+                        
+                        
+                        
+              
+                    </div>
+                    <div id="Drina" class="tab-pane fade">
+                      <h3>DRINA NATIONAL PARK</h3>
+                      <p>This Park is the newest addition to the list of Bosnian National Parks, established in 2017. The surface area extends over 6.325 hectares. The park sits in Eastern Bosnia, near Srebrenica. Just on the other side of the river Drina, in Serbia, there is the National Park Tara. River Drina is the Eastern border of Bosnia and it separates it from neighbouring Serbia.
+                      <br>
+                      <div id="myCarousel2" class="carousel slide carousel-around" data-ride="carousel">
+                        <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel2" data-slide-to="1"></li>
+                              <li data-target="#myCarousel2" data-slide-to="2"></li>
+                              <li data-target="#myCarousel2" data-slide-to="3"></li>
+                          </ol>
+                        
+                            <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                        
+                              <div class="item active">
+                                <img class="carousel-image" src="imgs/drina-national-park1.jpg" alt="Chania">
+                                <div class="carousel-caption">
+                                </div>
+                              </div>
+                        
+                              <div class="item">
+                                <img class="carousel-image" src="imgs/drina-national-park2.jpg" alt="Chania">
+                                <div class="carousel-caption">
+                                </div>
+                              </div>
+                            
+                              <div class="item">
+                                <img class="carousel-image" src="imgs/drina-national-park3.jpg" alt="Flower">
+                                <div class="carousel-caption">
+                                </div>
+                              </div>
+                        
+                              <div class="item">
+                                <img class="carousel-image" src="imgs/drina-national-park4.jpg" alt="Flower">
+                                <div class="carousel-caption">
+                                </div>
+                              </div>
+                          
+                            </div>
+                        
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                      <br>
+                      Its main characteristics are biodiversity and geomorphological specificities. It is home to many animal species and endemic plants. Some notable animals include the brown bear (Ursus arctos), mountain goat (Rupicapra), and golden eagle (Aquila chrysaetos).</p>
+          
+                      
+                    </div>
+                    <div id="Sutjeska" class="tab-pane fade">
+                      <h3>SUTJESKA NATIONAL PARK</h3>
+                      <p>This is the oldest national park in Bosnia and Herzegovina. It occupies the southeast of the country and spreads over 17500 hectares (175 km²). River Sutjeska runs through the valley and the park bears its name. Forests cover the majority of the park which itself is a part of the chain of the Dinaric Alps.
+                        <br>
+                        <div id="myCarousel3" class="carousel slide carousel-around" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel3" data-slide-to="1"></li>
+                            <li data-target="#myCarousel3" data-slide-to="2"></li>
+                            <li data-target="#myCarousel3" data-slide-to="3"></li>
+                          </ol>
+                      
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                      
+                            <div class="item active">
+                              <img class="carousel-image" src="imgs/sutjeska-national-park1.jpg" alt="Chania">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                      
+                            <div class="item">
+                              <img class="carousel-image" src="imgs/sutjeska-national-park2.jpg" alt="Chania">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                          
+                            <div class="item">
+                              <img class="carousel-image" src="imgs/sutjeska-national-park3.jpg" alt="Flower">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                      
+                            <div class="item">
+                              <img class="carousel-image" src="imgs/sutjeska-national-park4.jpg" alt="Flower">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                        
+                          </div>
+                      
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                        <br>
+                        The mountain Maglić, the highest peak in Bosnia and Herzegovina is also a part of this Park. Likewise, mountain Zelengora is also a part of this park and is described as a place of exquisite beauty and wilderness. It wasn't part of the frontlines during the Bosnian war so the area is clear of mines and other potential dangers.</p>
+          
+                        
+                    </div>
+                    <div id="Kozara" class="tab-pane fade">
+                      <h3>KOZARA NATIONAL PARK</h3>
+                      <p>This National Park is situated in the northwestern part of Bosnia with a surface area of 3.520 ha. Kozara is the name of the mountain but the Park includes other notable peaks as well: Gola Planina (876) m, Rudine (750 m), Jarcevica (740 m), Vrnovacka Glava (719 m), and others.
+                        <br>
+                        <div id="myCarousel4" class="carousel slide carousel-around" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel4" data-slide-to="1"></li>
+                            <li data-target="#myCarousel4" data-slide-to="2"></li>
+                            <li data-target="#myCarousel4" data-slide-to="3"></li>
+                          </ol>
+                      
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                      
+                            <div class="item active">
+                              <img class="carousel-image" src="imgs/kozara-national-park1.jpg" alt="Chania">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                      
+                            <div class="item">
+                              <img class="carousel-image" src="imgs/kozara-national-park2.jpg" alt="Chania">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                          
+                            <div class="item">
+                              <img class="carousel-image" src="imgs/kozara-national-park3.jpg" alt="Flower">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                      
+                            <div class="item">
+                              <img class="carousel-image" src="imgs/kozara-national-park4.jpg" alt="Flower">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                        
+                          </div>
+                      
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                        <br>
+                        Like in the rest of Bosnia the climate is mild continental. Rivers Una, Sava, Sana, and the Vrbas surround the area of this national park.
+                        <br><br>
+                        Part of Kozara is also the Memorial complex. This memorial site is dedicated to the events of WWII. Axis powers occupied the territory and targeted the local insurgent forces. Therefore, together with the local civilian population, many organizers of the resistance ended up dead or in concentration camps.</p> 
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div id="article2" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="jumbotron3 text-center">
+                  <h1 class="headline">THE CULTURE OF COFFEE</h1> 
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, dolores!</p>
+                </div> 
+                <div class="container-fluid article-style">
+                  <div class="row">
+                    <div class="col-12">
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=[URL to share]" target="_blank"><img class="fb-image" src="imgs/fb-icon.png" alt=""></a>
+          
+                      <a href="https://www.instagram.com/share?url=[URL to share]
+                      " target="_blank"><img class="inst-image" src="imgs/inst-icon.png" alt=""></a>
+          
+                      <a href="https://twitter.com/intent/tweet?url=[URL to share]&text=[Check out these Paradise Travel offers]&via=[via username]
+                      " target="_blank"><img class="twitter-image" src="imgs/twitter-icon.png" alt=""></a>  
+          
+                      <a href="https://api.whatsapp.com/send?text=[Check%20out%20this%20website] [URL to share]
+                      " target="_blank"><img class="whats-image" src="imgs/whats-icon.png" alt=""></a>
+          
+                      <h2>What is Bosnian coffee?</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12"><strong>Bosnian coffee is traditionally made in an ibrik or ǆezva, a small copper pot with a high neck and a long handle. The basic steps include boiling water and finely ground coffee over an open fire or on the stove.
+                    </strong></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <br><p>Bosnian coffee is a lot like Turkish or Arabic coffee. The reason for that is historical. From the 1400s to the 1800s, the Ottoman Empire extended to Bosnia and Herzegovina. Islamic customs forbid alcohol, so coffee was the social drink of choice. This Turkish style of coffee is still popular in the country, despite a century of Austro-Hungarian rule and the breakup of Yugoslavia in the 1990s.
+                      <br><br>
+                      The Bosnian custom allows you to choose your preferred amount of sugar rather than let whoever is making the coffee decide for you. In Bosnia and Herzegovina, you'd be served the coffee in the ibrik, a mug, and a pile of sugar cubes. You add a sugar cube or two to your mug, pour a little coffee on top, and wait for the sugar to dissolve. Then you add the rest of the coffee. And you might enjoy a Turkish delight, a small jelly candy, on the side!
+                      <br>
+                    </div>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-12 jumbotron2">     
+                      <p>Bosnian coffee is strong, chocolatey, and sweet. Something like a shot of espresso, it's served with sugar on the side but no milk or cream. All you need is a tiny copper pot (ǆezva), finely ground coffee, and water!
+                      </p>
+                    </div>
+                  </div>   
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="article3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <div class="jumbotron4 text-center">
+                <h1 class="headline">VILLAGE OF LUKOMIR</h1> 
+                <p>The highest and most remote settlement in Bosnia and Herzegovina</p>
+              </div> 
+              <div class="container-fluid article-style">
+                <div class="row">
+                  <div class="col-12">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=[URL to share]" target="_blank"><img class="fb-image" src="imgs/fb-icon.png" alt=""></a>
+        
+                    <a href="https://www.instagram.com/share?url=[URL to share]
+                    " target="_blank"><img class="inst-image" src="imgs/inst-icon.png" alt=""></a>
+        
+                    <a href="https://twitter.com/intent/tweet?url=[URL to share]&text=[Check out these Paradise Travel offers]&via=[via username]
+                    " target="_blank"><img class="twitter-image" src="imgs/twitter-icon.png" alt=""></a>  
+        
+                    <a href="https://api.whatsapp.com/send?text=[Check%20out%20this%20website] [URL to share]
+                    " target="_blank"><img class="whats-image" src="imgs/whats-icon.png" alt=""></a>
+        
+                    <h2>A must-see place in Bosnia and Herzegovina</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12"><strong>Visiting Lukomir, the highest and most remote settlement in Bosnia and Herzegovina should be on your priority list when visiting this country. Traditional architecture and a way of life that remained almost unchanged in the last 500 years or more will make you feel like you time traveled and it will give you a completely different impression of this tiny balkan country. 
+                  </strong></div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    
+                    <br>
+                    Picturesque drive through Dugo polje on the way to Lukomir is one of the most beautiful mountain roads in BiH and is a worthy experience in itself. During wintertime it is not possible to reach it by car and roads are often blocked until late spring. This comes as no surprise as this small village is nested on the south slopes of Bjelašnica mountain 1469 meters above sea level.
+
+                    Lukomir (literally translated as an oasis of peace) is located at the edge of Rakitnica Canyon the second deepest canyon in Europe (after Tara Canyon). Legends say it used to be the home of a terrible dragon.
+                    <br> <br>
+                  </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-12 jumbotron2">     
+                    <p>Peace and quiet interrupted only by a barking dog or the sound of sheep and the incredibly cleansing energy of this place will make the sunrise over the village an unforgettable experience.
+                    </p>
+                  </div>
+                </div>   
+              </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="article4" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="jumbotron5 text-center">
+              <h1 class="headline">STORY OF SARAJEVO HAGADAH</h1> 
+              <p>Fear of the Other is never incurable</p>
+            </div> 
+            <div class="container-fluid article-style">
+              <div class="row">
+                <div class="col-12">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=[URL to share]" target="_blank"><img class="fb-image" src="imgs/fb-icon.png" alt=""></a>
+      
+                  <a href="https://www.instagram.com/share?url=[URL to share]
+                  " target="_blank"><img class="inst-image" src="imgs/inst-icon.png" alt=""></a>
+      
+                  <a href="https://twitter.com/intent/tweet?url=[URL to share]&text=[Check out these Paradise Travel offers]&via=[via username]
+                  " target="_blank"><img class="twitter-image" src="imgs/twitter-icon.png" alt=""></a>  
+      
+                  <a href="https://api.whatsapp.com/send?text=[Check%20out%20this%20website] [URL to share]
+                  " target="_blank"><img class="whats-image" src="imgs/whats-icon.png" alt=""></a>
+      
+                  <h2>Physical proof of the openness of Bosnian society</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12"><strong>If we were to pick the brightest gems from the treasure trove of material and intangible heritage kept in the National Museum of Bosnia and Herzegovina, there is no way we could leave out the illuminated Jewish codex known around the world as the Sarajevo Haggadah. The haggadah (Hebrew for story, account) is a collection of religious rules and traditions arranged into the order of the Seder observed on Passover, the holiday celebrating the liberation of the Jews from slavery in Egypt.
+                </strong></div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <br><p>
+                  Based on stylistic analysis of the illuminations and miniatures contained in its pages, it was determined that the book was made in mediaeval Spain, in the former kingdom of Aragon, most likely in Barcelona, around 1350. It may have been a present for the wedding of members of two prominent families, Shoshan and Elazar, because their coats of arms - a shield with a rosette/rose (shoshan in Hebrew) and a wing (elazar in Hebrew) - are featured on the page showing the coat of arms of the city of Barcelona.
+
+                  According to a note from the book itself, it changed owners after the expulsion of Jews from Spain in 1492, but we do not know the names of the original or the new owner. In the 16th and 17th centuries, the book was in the north of Italy, as confirmed by two short notes on its pages.
+                  <br><br>
+                  In keeping with its destiny, the Sarajevo Haggadah could not find peace even in the museum collection. In the first days following the occupation of Sarajevo by the German forces in 1941, German authorities demanded that Jozo Petrović, the director of the Museum at the time, hand over the famous leather-bound codex. Petrović, aided by the curator Derviš Korkut, took enormous risks, dodged the demand, and arranged for the Haggadah to be stowed somewhere safe. 
+                </div>
+              </div>
+              <div class="row"> 
+                <div class="col-12 jumbotron2">     
+                  <p>According to reliable accounts, it was hidden in a mosque in one of the Muslim villages on Mt Bjelašnica, where it stayed until the end of World War II. Another attempt to steal it was made in the 1950s; this time, too, the employees of the Museum prevented the theft. 
+                  </p>
+                  <p>Most recently, and hopefully for the last time, this valuable tome was endangered at the beginning of the siege of Sarajevo in 1992, when the National Museum found itself on the first line of defence. The museum took heavy shelling then, from which it has still not recovered.</p>
+                </div>
+              </div>   
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="article5" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="jumbotron6 text-center">
+            <h1 class="headline">OLD BRIDGE THAT CHOOSES TO STAND</h1> 
+            <p></p>
+          </div> 
+          <div class="container-fluid article-style">
+            <div class="row">
+              <div class="col-12">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=[URL to share]" target="_blank"><img class="fb-image" src="imgs/fb-icon.png" alt=""></a>
+    
+                <a href="https://www.instagram.com/share?url=[URL to share]
+                " target="_blank"><img class="inst-image" src="imgs/inst-icon.png" alt=""></a>
+    
+                <a href="https://twitter.com/intent/tweet?url=[URL to share]&text=[Check out these Paradise Travel offers]&via=[via username]
+                " target="_blank"><img class="twitter-image" src="imgs/twitter-icon.png" alt=""></a>  
+    
+                <a href="https://api.whatsapp.com/send?text=[Check%20out%20this%20website] [URL to share]
+                " target="_blank"><img class="whats-image" src="imgs/whats-icon.png" alt=""></a>
+    
+                <h2></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12"><strong>The bridge, which connected Muslim communities in the east with Christian communities in the west, had come to symbolise the multi-ethnicity of Bosnia, so when it was destroyed by tank fire in 1993 during the bitter civil war, this was an incredibly sad moment for the locals.
+              </strong></div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <br><p>
+                Mostar, on the banks of the mighty Neretva River, is the largest city in what is today Herzegovina. The town grew in importance during centuries of Ottoman rule from 1482 to 1878, when many beautiful and significant Islamic structures were built including the Kara Ozbegora Mosque (below). The town is most famous for its bridge however, which was heralded as a classic example of Ottoman design and became a world-recognised symbol during the Bosnian war.
+                <br><br>  
+                The story goes that after a number of failed bridges, the Ottoman Sultan vowed to execute the engineer Mimar Hayruddin if his bridge collapsed too. The day the bridge's wooden supports were due to be removed in 1566, Hayruddin had already begun to dig his own grave when he found out the bridge had survived. It would in fact stand for a further 429 years, through Ottoman and Austro-Hungarian rule, as well as two world wars. 
+                <br><br>
+                The bridge, which connected Muslim communities in the east with Christian communities in the west, had come to symbolise the multi-ethnicity of Bosnia, so when it was destroyed by tank fire in 1993 during the bitter civil war, this was an incredibly sad moment for the locals. After the war, the bridge was rebuilt, using many of the same limestone blocks that were salvaged from the river. The reopening of the bridge by Prince Charles in 2004 was symbolic and a sign that life was slowly returning to normal, as well as being testament to the courage and persistence of the city's inhabitants.
+              </div>
+            </div>
+            <div class="row"> 
+              <div class="col-12 jumbotron2">     
+                <p>Today Mostar is well worth a visit. The Ottoman quarter has been sympathetically restored, and there are a number of artesan shops and pretty cafes. Remnants of the 90's conflict are also visible in dilapidated buildings and  with its Viennese style architecture evidencing the Austro-Hungarian rule, Mostar Bridge is just one of many highlights of our tours.</p>
+              </div>
+            </div>   
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="article6" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="jumbotron7 text-center">
+          <h1 class="headline">GALLOPING WITH LIVNO MUSTANGS</h1> 
+          <p>Wild horses of Bosnia</p>
+        </div> 
+        <div class="container-fluid article-style">
+          <div class="row">
+            <div class="col-12">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=[URL to share]" target="_blank"><img class="fb-image" src="imgs/fb-icon.png" alt=""></a>
+  
+              <a href="https://www.instagram.com/share?url=[URL to share]
+              " target="_blank"><img class="inst-image" src="imgs/inst-icon.png" alt=""></a>
+  
+              <a href="https://twitter.com/intent/tweet?url=[URL to share]&text=[Check out these Paradise Travel offers]&via=[via username]
+              " target="_blank"><img class="twitter-image" src="imgs/twitter-icon.png" alt=""></a>  
+  
+              <a href="https://api.whatsapp.com/send?text=[Check%20out%20this%20website] [URL to share]
+              " target="_blank"><img class="whats-image" src="imgs/whats-icon.png" alt=""></a>
+  
+              <h2></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12"><strong>This spectacular sight can be seen in the proximity of Livno, a small town situated in the southwestern part of Bosnia & Herzegovina, not so far from the border with Croatia.
+            </strong></div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <br><p>
+                The area of Livno is famous for its fascinating landscapes - lush forests in the spring and golden valleys in the summer but also water resources, such as the largest man-made reservoir, Buško Lake. Towering above the town of Livno, plateau Kruzi, situated on the southern slope of Mt. Cincar, is home to a herd of majestic wild horses. For more than 50 years, these beautiful animals roam free over this plateau, on the altitude of 1200 m. Rich plains spread on 150 km2 offer abundant pastures for wild horses.
+              <br><br>  
+              It is believed that around 400 Bosnian mustangs gallop in this area. They love to gather between the villages Potočani and Zagoričani, some 10 km of Livno, crossing the main road M-16 in search for grassy areas, water and salt.
+              <br><br>
+              The origin of Livno wild horses goes back to the 1970s when the agriculture mechanization took place in the Balkans. Bosnian mustangs are the offspring of the original tame horses that were kept and used in villages around the town of Livno. Some fifty years ago, villagers freed their domesticated horses, replacing them by tractors and other machinery. At that time, there were only a dozen of horses abandoned, but they have bred since then, in spite of cold winters, wild animals and the war in the 1990s.
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-12 jumbotron2">     
+              <p>Only 50 wild horses survived the war, but by the time they were protected by the Bosnian law (2010), there were two hundred of them. Having developed resistance against all weather conditions and illnesses, nowadays their number increased to 400, and some say even 500.</p>
+            </div>
+          </div>   
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+        <!-- Container (Explore Section) -->
+        <div id="gallery" class="container-fluid text-center bg-grey">
+          <div class="row">
+            <div class="col-12"><h1></h1></div>
+          </div>
+          <h2>IMPRESSIONS</h2>
+          <div id="myCarousel" class="carousel slide text-center carouselbackground" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <h4>"Just random comment here..."<br><span>My first cousin</span></h4>
+              </div>
+              <div class="item">
+                <h4>"Amazing country, amazing people!"<br><span>Person that cancelled</span></h4>
+              </div>
+              <div class="item">
+                <h4>"Definitely coming back next winter!"<br><span>My wife</span></h4>
+              </div>
+              <div class="item">
+                <h4>"This could be much better"<br><span>Myself</span></h4>
+              </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        
+        
+        
+      <!-- Container (Activities Section) -->
+    <div id="activities" class="container-fluid slideanim">
+          <div class="row">
+            <div class="col">
+              <h3 class="activities"><strong>A YEAR ROUND ACTIVITIES</strong></h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h4>Get a glimpse of what we do as we tour Bosnia.</h4>
+            </div>
+          </div>
+
+          <div id="cards-row" class="row">
+              
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-default btn-sm prevbtn">
+                <span class="glyphicon glyphicon-chevron-left"></span> Prev
+              </button>
+              <button type="button" class="btn btn-default btn-sm nextbtn">
+                <span class="glyphicon glyphicon-chevron-right"></span> Next
+              </button>
+            </div>
+          </div>
+      </div>
+
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid slideanim">
+  <div id="pricing-headline" class="text-center">
+    <h2 class="pricetext">BEST FOR YOUR BUDGET</h2>
+    <h4 class="pricetext">Check out our great offers!</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center price1">
+        <div class="panel-heading">
+          <h1>PREMIUM</h1>
+        </div>
+        <div class="panel-body panel1">
+          <p><strong>21</strong> Different tour sites</p>
+          <p><strong>1287</strong> kilometers of road joy</p>
+        </div>
+        <div class="panel-footer">
+          <h3>£899</h3>
+          <h4>lorem ipsum</h4>
+          <button id="btn1" class="btn btn-lg">See offer</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12 price2">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>FULL EXPERIENCE</h1>
+        </div>
+        <div class="panel-body panel2">
+          
+          <p><strong>17</strong> Different tour sites</p>
+          <p><strong>987</strong> kilometers of road joy</p>
+        
+        </div>
+        <div class="panel-footer">
+          <h3>£689</h3>
+          <h4>lorem ipsum</h4>
+          <button id="btn2" class="btn btn-lg">See offer</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12 price3">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>ESSENCE</h1>
+        </div>
+        <div class="panel-body panel3">
+          
+          <p><strong>11</strong> Different tour sites</p>
+          <p><strong>648</strong> kilometers of road joy</p>
+        </div>
+        <div class="panel-footer">
+          <h3>£549</h3>
+          <h4>lorem ipsum</h4>
+          <button id="btn3" class="btn btn-lg">See offer</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+
+
+
+
+<div id="offer-details1" class="container-fluid">
+  <div class="row slideanim">
+    <div>
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>PREMIUM</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> Driver/Tour guide</p>
+          <p><strong>9</strong> Max #of persons</p>
+          <p><strong>21</strong> Different tour sites</p>
+          <p><strong>1287</strong> kilometers of road joy</p>
+          <p><strong>Endless</strong> Memories</p>
+        </div>
+        <div class="panel-footer">
+          <h3>£899</h3>
+          <h4>lorem ipsum</h4>
+          <div id="map"></div>
+          <div class="buttons-panel">
+          <button id="closebtn1" class="btn btn-sm">🗙</button>
+          <button id="booking1" class="btn">Book now</button>
+          <button id="nextbtn1" class="btn btn-sm">Next &raquo;</button>
+          </div>
+        </div>
+      </div>      
+    </div>     
+  </div>
+</div>
+
+<div id="offer-details2" class="container-fluid">
+  <div class="row slideanim">
+    <div>
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>FULL EXPERIENCE</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> Driver/Tour guide</p>
+          <p><strong>9</strong> Max #of persons</p>
+          <p><strong>21</strong> Different tour sites</p>
+          <p><strong>1287</strong> kilometers of road joy</p>
+          <p><strong>Endless</strong> Memories</p>
+        </div>
+        <div class="panel-footer">
+          <h3>£899</h3>
+          <h4>lorem ipsum</h4>
+          <div id="map2"></div>
+          <div class="buttons-panel">
+          <button id="closebtn2" class="btn">🗙</button>
+          <button id="booking2" class="btn">Book now</button>
+          <button id="nextbtn2" class="btn">Next &raquo;</button>
+          </div>
+        </div>
+      </div>      
+    </div>     
+  </div>
+</div>
+
+<div id="offer-details3" class="container-fluid">
+  <div class="row slideanim">
+    <div>
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>ESSENCE</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>1</strong> Driver/Tour guide</p>
+          <p><strong>9</strong> Max #of persons</p>
+          <p><strong>21</strong> Different tour sites</p>
+          <p><strong>1287</strong> kilometers of road joy</p>
+          <p><strong>Endless</strong> Memories</p>
+        </div>
+        <div class="panel-footer">
+          <h3>£899</h3>
+          <h4>lorem ipsum</h4>
+          <div id="map3"></div>
+          <div class="buttons-panel">
+          <button id="closebtn3" class="btn">🗙</button>
+          <button id="booking3" class="btn">Book now</button>
+          <button id="nextbtn3" class="btn">Next &raquo;</button>
+          </div>
+        </div>
+      </div>      
+    </div>     
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="imgs/logo1.svg" alt="logoimg" srcset="">
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Container (Contact Section) -->
+        <div id="contact" class="container-fluid bg-grey">
+          <div id="ww_d4f23af73a15a" v='1.3' loc='id' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl11931"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"rgba(30,137,244,0.795)","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Weather Data Source: <a href="https://sharpweather.com/weather_sarajevo/" id="ww_d4f23af73a15a_u" target="_blank">sharpweather.com</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_d4f23af73a15a"></script>
+          <h2 class="text-center">CONTACT</h2>
+          <div class="row">
+            <div class="col-sm-5">
+              <p>Contact us and we'll get back to you within 24 hours.</p>
+              <p><span class="glyphicon glyphicon-map-marker"></span> Sarajevo, BiH</p>
+              <p><span class="glyphicon glyphicon-phone"></span>+38762069303</p>
+              <p><span class="glyphicon glyphicon-envelope"></span> bilcevicrifat@gmail.com</p>
+            </div>
+            <form action="form.php" method="POST">
+              <div class="col-sm-7 slideanim">
+                <div class="row">
+                <div class="col-sm-6 form-group" action="form.php" method="POST">
+                  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                </div>
+               </div>
+               <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
+               <div class="row">
+                <div class="col-sm-12 form-group">
+                  <button class="btn btn-default pull-right" type="submit">Send</button>
+                </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+        
+        <!-- Image of location/map -->
+        
+        
+        <footer class="container-fluid text-center footerclass">
+          <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+          </a>
+          <p>By Bilcevic Rifat</p>
+        </footer>
+      
+        
+
+  
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+    <script src="scriptmaps.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

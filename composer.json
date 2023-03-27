@@ -1,0 +1,19 @@
+{
+    "name": "rifat/kemish-site",
+    "description": "Tour agency",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Rifat\\KemishSite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rifat Bilcevic"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "sendgrid/sendgrid": "^8.0"
+    }
+}
