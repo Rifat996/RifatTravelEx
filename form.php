@@ -14,7 +14,7 @@ if(isset($_POST['email'])) {
     $email->addTo("bilcevicrifat@gmail.com", "Rifat Bilcevic"); 
     $email->addContent("text/plain", $email_body);
 
-    $apiKey = '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';
+    $apiKey = 'MyAPI key';
     $sg = new \SendGrid($apiKey);
 
     try {
